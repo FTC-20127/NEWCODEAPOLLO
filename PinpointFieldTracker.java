@@ -25,8 +25,8 @@ public class PinpointFieldTracker {
 
     // xOffset (forward pod): + = LEFT of robot center, - = RIGHT of robot center
     // yOffset (strafe pod):  + = FORWARD of robot center, - = BACK of robot center
-    public static double FORWARD_POD_OFFSET_MM = 55.0;
-    public static double STRAFE_POD_OFFSET_MM  = 55.0;
+    public static double FORWARD_POD_OFFSET_MM = 90.267;
+    public static double STRAFE_POD_OFFSET_MM  = 25.94945;
 
     public static GoBildaPinpointDriver.EncoderDirection X_POD_DIR =
             GoBildaPinpointDriver.EncoderDirection.FORWARD;
@@ -49,14 +49,15 @@ public class PinpointFieldTracker {
     public static double BLUE_SCORING_Y  = +14.0;
 
     // ---------- 4. MATCH STARTING POSES (update to match where you place the robot) ----------
+    // RED: Tile A6 — back on Red wall, left side on Scoring wall, facing Blue (+X)
     public static double RED_START_X_IN        = -63.0;
-    public static double RED_START_Y_IN        = -36.0;
-    public static double RED_START_HEADING_DEG = 0.0;     // facing +X (toward center / Blue)
+    public static double RED_START_Y_IN        = +63.0;
+    public static double RED_START_HEADING_DEG = 0.0;
 
+    // BLUE: Tile F1 — back on Blue wall, left side on Audience wall, facing Red (-X)
     public static double BLUE_START_X_IN        = +63.0;
-    public static double BLUE_START_Y_IN        = +36.0;
-    public static double BLUE_START_HEADING_DEG = 180.0;  // facing -X (toward center / Red)
-
+    public static double BLUE_START_Y_IN        = -63.0;
+    public static double BLUE_START_HEADING_DEG = 180.0;
     /** Constant aim tweak in degrees (+ aims more LEFT, - aims more RIGHT). */
     public static double SHOT_OFFSET_DEG = 0.0;
 
